@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Stack - E-Commerce Vendor Console</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo">ApexStack Labs</div>
+            <nav class="nav-links">
+                <a href="#" class="active">Overview</a>
+                <a href="#">Products & Stock</a>
+                <a href="#">Orders Queue</a>
+                <a href="#">Customer Database</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-header">
+                <h1>Vendor Performance Console</h1>
+                <div class="date-badge">Live System Mode</div>
+            </header>
+
+            <section class="metrics-grid">
+                <div class="card">
+                    <h3>Gross Revenue</h3>
+                    <p class="metric-value">$42,950.00</p>
+                    <span class="trend positive">+14.2% this week</span>
+                </div>
+                <div class="card">
+                    <h3>Active Stock Items</h3>
+                    <p class="metric-value">1,240</p>
+                    <span class="trend warning">4 SKUs low stock</span>
+                </div>
+                <div class="card">
+                    <h3>Pending Orders</h3>
+                    <p class="metric-value">18</p>
+                    <span class="trend processing">Awaiting dispatch</span>
+                </div>
+            </section>
+
+            <section class="data-table-section">
+                <h2>Relational Inventory View (SQL Integrated Layout)</h2>
+                <table class="inventory-table">
+                    <thead>
+                        <tr>
+                            <th>Product ID</th>
+                            <th>Product Name</th>
+                            <th>SKU</th>
+                            <th>Price</th>
+                            <th>Stock Level</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#1001</td>
+                            <td>Premium Leather Goods</td>
+                            <td>LUX-LEA-01</td>
+                            <td>$120.00</td>
+                            <td>450</td>
+                            <td><span class="status-badge in-stock">In Stock</span></td>
+                        </tr>
+                        <tr>
+                            <td>#1002</td>
+                            <td>Minimalist Chrono Watch</td>
+                            <td>TIM-MIN-02</td>
+                            <td>$185.00</td>
+                            <td>12</td>
+                            <td><span class="status-badge low-stock">Low Stock</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
